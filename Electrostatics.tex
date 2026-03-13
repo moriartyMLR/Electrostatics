@@ -1,14 +1,16 @@
 \documentclass{article}
 \usepackage[utf8]{inputenc}
 \usepackage{setspace}
+\usepackage[margin=0.5in]{geometry}
+\headheight=0pt
+%\headsep=0pt
+\usepackage{graphicx}
+\usepackage{amsmath}
 
-\setstretch{1.5}
+\setstretch{1.75}
 \title{Electrostatics}
 \author{Michael Remp}
-\date{Last Updated 12-03-2026}
-
-\usepackage{graphicx}
-
+\date{Last Updated 13/03/2026}
 
 \def\rcurs{{\mbox{$\resizebox{.09in}{.08in}{\includegraphics[trim= 1em 0 14em 0,clip]{ScriptR}}$}}}
 \def\brcurs{{\mbox{$\resizebox{.09in}{.08in}{\includegraphics[trim= 1em 0 14em 0,clip]{BoldR}}$}}}
@@ -20,16 +22,36 @@
 
 \section*{Coulomb's Law \& Electric Field}
 \begin{flushleft}
-    \textbf{Source charges} — responsible for creating electric field/force
+    \textbf{Source charges} $q$ — responsible for creating electric field/force
 
-    \textbf{Test charge} — charge used to measure the exisiting electric field/force
+    \textbf{Test charge} $Q$ — charge used to measure the exisiting electric field/force
 
     \textbf{Principal of Superposition} — interaction between two charges is independant of other charges
 \end{flushleft}
 
 \subsection*{Coulomb's Law}
-\begin{equation}
-    \vec{F} = \cc \frac{qQ}{\rcurs^2}\hrcurs
-\end{equation}
+    \begin{equation}
+        \vec{F} = \cc \frac{qQ}{\rcurs^2}\hrcurs
+    \end{equation}
+    Where $\vec{\brcurs} = \vec{r} - \vec{r'}$ is the \textbf{separation vector}, $\vec{r}$ \& $\vec{r'}$ are \textbf{position vectors} for test charge and source charge respectively\\
+    \textbf{Permitivity of free space} $\epsilon_0 \equiv 8.85\times 10^{-12}\frac{C^2}{N\cdot m^2}$
 
+\subsection*{The Electric Field}
+    Force due to multiple charges,
+    \begin{gather*}
+        \vec{F} = \vec{F}_{total} = \vec{F}_1 + \vec{F}_2 = \cc \left(\frac{q_1Q}{\rcurs^2_1}\hrcurs_1 +\frac{q_2Q}{\rcurs^2_2}\hrcurs_2 + \dots\right)\\
+        \vec{F} = \frac{Q}{4\pi\epsilon_0}\left[\frac{q_1}{\rcurs^2_1}\hrcurs_1 +\frac{q_2}{\rcurs^2_2}\hrcurs_2 + \dots\right]
+    \end{gather*}
+    $\vec{E} \equiv$ electric field of source charges.
+    \begin{gather}
+        \vec{E} = \frac{1}{4\pi\epsilon_0}\left[\frac{q_1}{\rcurs^2_1}\hrcurs_1 +\frac{q_2}{\rcurs^2_2}\hrcurs_2 + \dots\right] = \cc \sum_{i=1}^{n}\frac{q_i}{\rcurs^2_i}\hrcurs_i
+    \end{gather}
+    then,
+    \begin{gather}
+        \vec{F} = Q\vec{E} (\vec{r})
+    \end{gather}
+    $\vec{E} (\vec{r}) \equiv$ force per unit charge on a test charge at point P
+    \newpage
+
+\subsection*{Continuous Charge Distributions}
 \end{document}
