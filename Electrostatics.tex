@@ -13,8 +13,7 @@
 \def\rcurs{{\mbox{$\resizebox{.09in}{.08in}{\includegraphics[trim= 1em 0 14em 0,clip]{ScriptR}}$}}}
 \def\brcurs{{\mbox{$\resizebox{.09in}{.08in}{\includegraphics[trim= 1em 0 14em 0,clip]{BoldR}}$}}}
 \def\hrcurs{{\mbox{$\hat \brcurs$}}}
-
-\newcommand{\cc}{$\frac{1}{4\pi\epsilon_0}$}
+\def\cc{{\frac{1}{4\pi\epsilon_0}}}
 
 \begin{document}
 \maketitle
@@ -30,7 +29,7 @@
 
 \subsection*{Coulomb's Law}
 \begin{equation}
-    \vec{F} = \frac{qQ}{\rcurs^2}
+    \vec{F} = \cc \frac{qQ}{\rcurs^2}\hrcurs
 \end{equation}
 
 \end{document}

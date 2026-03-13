@@ -62,6 +62,10 @@ INPUT ./ScriptR.pdf
 INPUT ./ScriptR.pdf
 OUTPUT Electrostatics.pdf
 INPUT ./ScriptR.pdf
+INPUT ./BoldR.pdf
+INPUT ./BoldR.pdf
+INPUT ./BoldR.pdf
+INPUT ./BoldR.pdf
 INPUT /var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map
 INPUT Electrostatics.aux
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
