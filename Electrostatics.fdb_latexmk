@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1773845916 "/Users/moriarty/Documents/Physics B.S./Study Guides/Electrostatics/Electrostatics.tex" "Electrostatics.pdf" "Electrostatics" 1773845916 0
-  "/Users/moriarty/Documents/Physics B.S./Study Guides/Electrostatics/Electrostatics.tex" 1773845915 5271 a270fea4ad765bd4f540c03d5ba7401b ""
+["pdflatex"] 1773846211 "/Users/moriarty/Documents/Physics B.S./Study Guides/Electrostatics/Electrostatics.tex" "Electrostatics.pdf" "Electrostatics" 1773846212 0
+  "/Users/moriarty/Documents/Physics B.S./Study Guides/Electrostatics/Electrostatics.tex" 1773846211 5298 d447c52a0ded3d4e4a12ad9666745a16 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -63,8 +63,8 @@
   "/usr/local/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt" 1692461269 7883452 1755b76f20e862ce5e712d8401909863 ""
   "/usr/local/texlive/2023/texmf.cnf" 1678822455 577 1b2b1af17af2508fb20dd85783af4050 ""
   "BoldR.pdf" 1773780293 156254 ee722c7e111d3f0d46da3219e8152a86 ""
-  "Electrostatics.aux" 1773845916 32 ab05033ccbb38b00a31b200ccedf8001 "pdflatex"
-  "Electrostatics.tex" 1773845915 5271 a270fea4ad765bd4f540c03d5ba7401b ""
+  "Electrostatics.aux" 1773846212 32 ab05033ccbb38b00a31b200ccedf8001 "pdflatex"
+  "Electrostatics.tex" 1773846211 5298 d447c52a0ded3d4e4a12ad9666745a16 ""
   "ScriptR.pdf" 1773780293 8450 5c51581760014a23b5af24f4756ac5f5 ""
   (generated)
   "Electrostatics.aux"
