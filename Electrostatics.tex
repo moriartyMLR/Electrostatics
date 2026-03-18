@@ -57,7 +57,6 @@
     \vspace{6px}
     \subitem \textbf{Example 2.1} |
         Find the electric field a distance $z$ above the midpoint between two equal charges $q$, a distance $d$ apart.
-    \subitem \textbf{Solution:}
     \begin{gather*}
         \text{Point charges | }\pointEF\\
         \text{Let }\vec{E}_1 \text{ be the electric field of the left charge and $\vec{E}_2$ be the field of the right charge.}\\
@@ -91,6 +90,7 @@
     \hrule
     \vspace{5px}
     \subitem \textbf{Example 2.2} | Find the electric field a distance $z$ above the midpoint of a straigh line segment of length $2L$ that carries a uniform line charge $\lambda$
+<<<<<<< HEAD
     \begin{equation*}
         \vec{E} (\vec{r}) = \cc \int \frac{\lambda (\vec{r})}{\rcurs^2}\hrcurs dl'
     \end{equation*}
@@ -102,5 +102,24 @@
     \end{gather*}
     \hrule
     \vspace{5px}
+=======
+        \begin{equation*}
+            \vec{E} (\vec{r}) = \cc \int \frac{\lambda (\vec{r})}{\rcurs^2}\hrcurs dl'
+        \end{equation*}
+        \begin{gather*}
+            \text{Horizontal components are going to cancel}\\
+            dq = \lambda dl', \text{ $dl'$ is $dx$ along x-axis} \quad \vec{r} = z\hat{z} \text{ (test position vector)} \quad \vec{r'} = x\hat{x} \text{ (source position vector)}\\
+            \vec{\brcurs} = z\hat{z} - x\hat{x} \quad \rcurs = \sqrt{z^2 + x^2} \quad \hrcurs = \frac{z\hat{z} - x\hat{x}}{\sqrt{z^2 + x^2}}\\
+            \vec{E} (\vec{r}) = \cc \int_{-L}^{L} \frac{\lambda}{\left(\sqrt{z^2 + x^2}\right)^2}\frac{z\hat{z} - x\hat{x}}{\sqrt{z^2 + x^2}}dx\\
+            = \frac{\lambda}{4\pi\epsilon_0}\left[z\hat{z}\int_{-L}^{L}\frac{1}{\left(z^2+x^2\right)^{3/2}} - \hat{x}\int_{-L}^{L}\frac{x}{\left(z^2+x^2\right)^{3/2}}\right]\\
+            = \frac{\lambda}{4\pi\epsilon_0}\left[z\hat{z}\left.\left(\frac{x}{z^2\sqrt{z^2+x^2}}\right)\right|_{-L}^{L} - \hat{x}\left.\left(-\frac{1}{\sqrt{z^2+x^2}}\right)\right|_{-L}^{L}\right]\\
+            = \cc \frac{2L\lambda}{z\sqrt{z^2+L^2}}\hat{z}
+        \end{gather*}
+        \hrule
+        \vspace{5px}
+    
+    
+
+>>>>>>> 6545c95 (update)
 
 \end{document}
