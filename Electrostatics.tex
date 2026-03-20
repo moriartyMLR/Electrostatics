@@ -17,6 +17,8 @@
 \def\hrcurs{{\mbox{$\hat \brcurs$}}}
 \def\cc{{\frac{1}{4\pi\epsilon_0}}}
 \def\pointEF{{\cc\sum_{i=1}^{n}\frac{q_i}{r^2_i}\hrcurs}}
+\def\qenc{{Q_{enc}}}
+\def\pofs{{\epsilon_0}} % Permitivity of free space
 
 \begin{document}
 \maketitle
@@ -116,4 +118,35 @@
         \end{gather*}    
     \hrule
     \vspace{6px}
+    \newpage
+
+
+\section*{Divergence \& Curl of Electrostatic Fields}
+    \textbf{The flux of $\vec{E}$} through surface $S$ | $\Phi_E \equiv \int_s \vec{E} \cdot d\vec{a}$\\
+    \textbf{The charge enclosed} in a closed surface | $Q_{enc}$
+    \subsection*{Gauss's Law}
+        The flux through a spherical surface of radius $r$,
+        \begin{equation}
+            \oint \vec{E} \cdot d\vec{a} = \int \cc \frac{q}{r^2}\hat{r} \cdot (r^2\sin\theta drd\theta d\phi\hat{r}) = \frac{1}{\pofs}\qenc
+        \end{equation}
+        For any closed surface,
+        \begin{equation}
+            \boxed{\oint \vec{E} \cdot d\vec{a} = \frac{\qenc}{\pofs}} \quad\textbf{Gauss's Law in integral form}
+        \end{equation}
+        Apply divergence theorem to find differential form,
+        \begin{gather*}
+            \oint \vec{E} \cdot \vec{a} = \int_V (\vec{\nabla} \cdot \vec{E})d\tau\\
+            \text{Rewrite $\qenc$ in terms of charge density $\rho$},\\
+            \qenc = \int_V \rho d\tau
+        \end{gather*}
+        So,
+        \begin{equation*}
+            \int_V (\vec{\nabla} \cdot \vec{E})d\tau = \frac{\qenc}{\pofs} = \int_V \frac{\rho}{\pofs} d\tau
+        \end{equation*}
+        Since this is true for any volume, we can drop the integrands.
+        \begin{equation}
+            \boxed{\vec{\nabla} \cdot \vec{E} = \frac{\rho}{\pofs}} \quad \textbf{Guass's Law in differential form}
+        \end{equation}
+
+
 \end{document}
